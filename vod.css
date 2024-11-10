@@ -1,0 +1,14 @@
+a{
+    font-size: 0.5em;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    min-height: 600px;
+}

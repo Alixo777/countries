@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 5 -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="vod.css">
+  <title>Document</title>
+  <!-- lodash -->
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <!-- js type=module -->
+  <script defer type="module" src="js_vod/appVod.js" defer></script>
+</head>
+
+<body>
+  <header class="container-fluid p-2 bg-info">
+    <nav class="container">
+      <div  class="row">
+        <div class="col-auto text-dark">
+          <h2>Home
+            <a href="vodSingle.html?name=Israel" class="btn btn-success">Israel</a>
+            <a href="vodSingle.html?name=United States" class="btn btn-secondary">United States</a>
+            <a href="vodSingle.html?name=France" class="btn btn-warning">France</a>
+            <a href="vodSingle.html?name=United Kingdom" class="btn btn-danger">United Kingdom</a>
+            <a href="vodSingle.html?name=Thailand" class="btn btn-light">Thailand</a>
+          </h2>
+
+        </div>
+        <div class="col-md-4 d-flex">
+          <input placeholder="search for Country..." type="text" id="id_input" class="form-control">
+          <button id="search_btn" class="btn btn-dark">Search</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid  bg-secondary py-4">
+    <div class="container">
+      <div id="id_row" class="center row">
+      </div>
+    </div>  
+  </main>
+</body>
+
+</html>

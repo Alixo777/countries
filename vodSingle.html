@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Country Info</title>
+  <script src="js_vod/vodSingle.js" defer></script>
+</head>
+<body>
+  <header class="container-fluid p-2 bg-info">
+    <nav class="container">
+      <div class="row">
+        <div class="col-auto">
+          <h2><a href="vod.html" class="text-dark">Home</a></h2>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid py-4 text-center">
+    <div id="id_loading" class="loading text-center">
+      <img src="images/loading.gif" alt="Loading..." /> 
+      <p class="display-3">Loading...</p>
+    </div>
+
+    <div id="id_info_div" class="container" style="display: none;">
+      <img id="id_img" src="" alt="Country flag" />
+      <h1 id="id_h1">Country Name</h1>
+      <div><strong>Capital:</strong> <span id="id_capital"></span></div>
+      <div><strong>Population:</strong> <span id="id_population"></span></div>
+      <div><strong>Borders:</strong> <span id="id_borders"></span></div>
+      <button id="back_btn" class="btn btn-secondary">Back to list</button>
+    </div>  
+  </main>
+</body>
+</html>
